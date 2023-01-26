@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marmelad&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-flex">
+            <img class="header-logo" src="./icon/header-logo.png" alt="header logo">
+            <div class="header-nav">
+                <a href="" class="header-nav-text">Магазины</a>
+                <a href="" class="header-nav-text">Контакты</a>
+                <a href="" class="header-nav-text">О нас</a>
+            </div>
+                <a href="tel:+3 67 8754 7894" class="header-link-tel">+3 67 8754 7894</a>
+                <div class="header-btn-language">
+                    <button class="header-btn-language-rus">Ru</button>
+                    <button class="header-btn-language-eng">Eng</button>
+                </div>
+                <div>
+                    <button class="header-btn-comein">Войти</button>
+                    <button class="header-btn-create">Создать аккаунт</button>
+                </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-conteiner-text">
+            <h1 class="main-title">Мы будем рады сотрудничать с вами на платформе 'Международной цветочной онлайн-площадки'!</h1>
+            <p class="main-subtitle">Присоединяйтесь к нам и начните получать доход с бизнеса в первый месяц регистрации!</p>
+            <div class="main-conteiner-btn">
+                <button class="main-btn">Начать покупать</button>
+                <button class="main-btn">Начать продавать</button>
+            </div>
+        </div>
+        <div class="main-conteiner-checkin">
+            <div class="main-conteiner-checkin-flex">
+                <div class="main-conteiner-checkin-text">
+                    <h1 class="main-conteiner-checkin-title">Заполните форму и начните развивать свой бизнес прямо сейчас!</h1>
+                    <p class="main-conteiner-checkin-subtitle">Регистрация на нашем сайте занимает несколько минут, просим ответить на все вопросы полностью и корректно! После подтверждения регистрации вы попадете в систему, где большинство процессов автоматизированы, что сэкономит ваше время и деньги!</p>
+                </div>
+                <div class="main-form-flex">
+                    <input type="radio" id="tab-1" name="tabs" value="" checked>
+                    <label class="main-form-btn-back" for="tab-1" >Назад</label>
+                    <input type="radio" id="tab-2" name="tabs" value="">
+                    <label class="main-form-btn" for="tab-2">Далее</label>
+                    <form id="form-1" class="main-form" >
+                        <div>
+                            <div class="form-mobile-flex">
+                                <label>Ваше имя</label>
+                                <input type="text" placeholder="Фролова Александра Васильевна">
+                            </div>  
+                            <div class="form-mobile-flex">
+                                <label>Название компании</label>
+                                <input type="text" placeholder="ООО Атлантика">
+                            </div> 
+                            <div class="form-mobile-flex">
+                                <label for="email">E-mail</label>
+                                <input type="email" pattern=".+@globex\.com" placeholder="frolovaalexa@com.rur">
+                            </div>
+                        </div>                          
+                        <div>
+                            <div class="form-mobile-flex">
+                                <label for="phone">Номер телефона</label>
+                                <input type="tel" id="phone" name="phone" pattern="[0-9]{1}-[0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" placeholder="+7 (XXX) - XXX XX XX">
+                            </div>  
+                            <div class="form-mobile-flex">
+                                <label>Промокод</label>
+                                <input type="text" placeholder="HGF864">
+                            </div>
+                        </div>
+                    </form>
+                    <form id="form-2" class="main-form" >
+                        <div>
+                            <div class="form-mobile-flex">
+                                <label for="userPassword">Пароль</label>
+                                <input id="userPassword" type="password" autocomplete="current-password" minlength="8" placeholder="Создайте пароль">
+                            </div>
+                            <div class="form-mobile-flex">
+                                <label>Подтвердите пароль</label>
+                                <input id="userPassword" type="password" autocomplete="current-password" minlength="8" placeholder="Повторите пароль">  
+                            </div>
+                        </div>
+                            <img class="main-form-img-code" src="./image/image-code.png" alt="img-code">                           
+                            <div class="form-mobile-flex">                                   
+                                <label>Введите символы из картинки</label>
+                                <input type="text" placeholder="Код из картинки" >
+                                <div class="main-form-btn-confirm">
+                                    <button class="main-form-btn-back">Подтвердить</button>
+                                </div>
+                                <p class="form-password-agreement">Я даю согласие на обработку моих персональных данных и правовых документов</p>
+                            </div>                                                                          
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-conteiner">
+            <div class="footer-office">
+                <h2 class="footer-office-title">Наши офисы</h2>
+                <span class="footer-office-subtitle">Московский офис<br>+7 455 267-89-87<br>Берсеневский пер., д. 56, стр. 4,<br>6-й эт., Москва, 567754</span>
+                <span class="footer-office-subtitle">Ростовский офис<br>+7 878 888 01 67<br>Буденовский пр-т, д., 84 6-й эт.,<br>Ростов-на-Дону, 679965</span>
+            </div>
+            <div class="footer-networks">
+                <h2 class="footer-office-title">Мы в соцсетях</h2>
+                <div class="footer-link-block">
+                    <a class="footer-link" href="https://www.instagram.com/" target="_blank">Instagram</a>
+                </div>
+                <div>
+                    <a class="footer-link"  href="https://www.facebook.com/" target="_blank">Facebook</a>
+                </div>
+            </div>
+            <div class="footer-contact"> 
+                <h2 class="footer-office-title">Свяжитесь с нами</h2>
+                <a href="tel:+3 67 8754 7894" class="footer-link-tel">+3 67 8754 7894</a>
+                <h3 class="footer-mail-title">mflowers@flo.com</h3>
+                <a class="footer-mail-link" href="mailto:mflowers@flo.com">Написать</a>
+            </div>
+        </div>
+        <p class="footer-subtitle-copyright">Авторские права 2008-2022 M-flowers.com</p>
+    </footer>
+    
+</body>
+</html>
